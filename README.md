@@ -1,4 +1,3 @@
-```markdown
 # LinkedIn Job Scraper
 
 This project is a web scraper built with Python and Selenium for extracting job postings from LinkedIn. It collects job data from specified LinkedIn job search URLs and saves the information in both JSON and CSV formats.
@@ -17,7 +16,7 @@ This project is a web scraper built with Python and Selenium for extracting job 
 - `webdriver_manager` for managing ChromeDriver
 - Pandas
 - JSON
-```
+- 
 ### Ensure Speed Internet
 
 ## Installation

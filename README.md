@@ -17,8 +17,9 @@ This project is a web scraper built with Python and Selenium for extracting job 
 - `webdriver_manager` for managing ChromeDriver
 - Pandas
 - JSON
+```
+### Ensure Speed Internet
 
-### Ensure Speed Internet 
 ## Installation
 
 1. Clone the repository:

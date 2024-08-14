@@ -1,0 +1,6 @@
+# created by virtualenv automatically
+Lib/
+Scripts/
+pyvenv.cfg
+linkedin_jobs.csv
+linkedin_jobs.json

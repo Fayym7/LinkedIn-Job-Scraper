@@ -23,13 +23,13 @@ This project is a web scraper built with Python and Selenium for extracting job 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/linkedin-job-scraper.git
+   git clone https://github.com/Fayym7/LinkedIn-Job-Scraper.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd linkedin-job-scraper
+   cd Linkedin-Job-Scraper
    ```
 
 3. Install the required packages:

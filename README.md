@@ -5,7 +5,7 @@ This project is a web scraper built with Python and Selenium for extracting job 
 ## Features
 
 - Scrapes job listings from LinkedIn based on provided search URLs.
-- Filters top 50 job postings by 'Past 1 month' for up-to-date listings.
+- Filters top 50 job postings by 'Past 1 week' for up-to-date listings.
 - Extracts detailed information including job title, company name, location, posted date, employment type, and seniority level.
 - Saves the extracted data in JSON and CSV formats for further analysis.
 

@@ -21,12 +21,12 @@ def get_job_data(url):
         WebDriverWait(driver, 20).until(
             EC.presence_of_element_located((By.CLASS_NAME, 'jobs-search__results-list'))
         )
-        # Click on the 'Date Posted' filter and select 'Past 24 hours'
+        # Click on the 'Date Posted' filter and select 'Past 1 month'
         WebDriverWait(driver, 20).until(
             EC.element_to_be_clickable(driver.find_element(By.XPATH, '/html/body/div[1]/section/div/div/div/form[1]/ul/li[2]/div/div/button'))
         ).click()  
         time.sleep(0.5)                                # Slight delay to ensure the filter is applied
-        driver.find_element(By.ID, 'f_TPR-1').click()  # Select 'Past 24 hours' option
+        driver.find_element(By.ID, 'f_TPR-1').click()  # Select 'Past 1 month' option
         time.sleep(0.5)
         WebDriverWait(driver, 20).until(
             EC.element_to_be_clickable(driver.find_element(By.XPATH, '/html/body/div[1]/section/div/div/div/form[1]/ul/li[2]/div/div/div/button'))
@@ -51,7 +51,7 @@ def get_job_data(url):
                 content = WebDriverWait(driver, 10).until(
                     EC.presence_of_element_located((By.CLASS_NAME, 'details-pane__content'))
                 )
-                time.sleep(4)                            # Additional wait to ensure all job details are visible
+                time.sleep(3)                            # Additional wait to ensure all job details are visible
 
                 # Initialize job details variables
                 job_title = ''

@@ -14,6 +14,7 @@ from urllib.parse import urlparse, parse_qs
 # Function to extract job data from a given LinkedIn URL
 def get_job_data(url):
     driver.get(url)                                   #Initializing the webpage based on the URL
+    time.sleep(2)
     print('Entering jobs one by one')
     job_listings = []
     try: 
@@ -21,12 +22,12 @@ def get_job_data(url):
         WebDriverWait(driver, 20).until(
             EC.presence_of_element_located((By.CLASS_NAME, 'jobs-search__results-list'))
         )
-        # Click on the 'Date Posted' filter and select 'Past 1 month'
+        # Click on the 'Date Posted' filter and select 'Past 1 week'
         WebDriverWait(driver, 20).until(
             EC.element_to_be_clickable(driver.find_element(By.XPATH, '/html/body/div[1]/section/div/div/div/form[1]/ul/li[2]/div/div/button'))
         ).click()  
         time.sleep(0.5)                                # Slight delay to ensure the filter is applied
-        driver.find_element(By.ID, 'f_TPR-1').click()  # Select 'Past 1 month' option
+        driver.find_element(By.ID, 'f_TPR-2').click()  # Select 'Past 1 week' option
         time.sleep(0.5)
         WebDriverWait(driver, 20).until(
             EC.element_to_be_clickable(driver.find_element(By.XPATH, '/html/body/div[1]/section/div/div/div/form[1]/ul/li[2]/div/div/div/button'))

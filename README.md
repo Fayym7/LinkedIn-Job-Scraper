@@ -17,7 +17,7 @@ This project is a web scraper built with Python and Selenium for extracting job 
 - Pandas
 - JSON
 
-### Ensure Speed Internet
+### Ensure you have a Good Internet Speed
 
 ## Installation
 

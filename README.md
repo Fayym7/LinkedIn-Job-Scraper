@@ -18,7 +18,7 @@ This project is a web scraper built with Python and Selenium for extracting job 
 - JSON
   
 #### Note
-Use LinkedIn without logging in to avoid potential bans or impacts on your account. Sometimes it may ask for logging in, then close the application and restart it
+Use LinkedIn without logging in to avoid potential bans or impacts on your account. Sometimes it may ask for logging in, if so then close the application and restart it
 
 ### Ensure you have a Good Internet Speed
 
